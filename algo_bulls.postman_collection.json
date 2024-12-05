@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "242f885a-a3df-4a23-b0bc-5b93f9d5e8bf",
+		"name": "algo_bulls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38693215"
+	},
+	"item": [
+		{
+			"name": "create_task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"lolll\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "get_tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "update_tasks",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"lol\", \"completed\": true}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/tasks/update/15/"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_tasks",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/tasks/15/delete/"
+			},
+			"response": []
+		},
+		{
+			"name": "get_task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
